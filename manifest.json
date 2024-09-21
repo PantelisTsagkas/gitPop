@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "GitPop",
+  "version": "1.0",
+  "description": "A quick reference to the most useful Git commands.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Git Commands Cheat Sheet"
+  },
+  "permissions": ["clipboardWrite"],
+  "icons": {
+    "16": "icon21.png",
+    "32": "icon21.png",
+    "48": "icon21.png",
+    "128": "icon21.png"
+  }
+}

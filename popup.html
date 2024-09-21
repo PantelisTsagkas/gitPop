@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Git Cheat Sheet</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Creating a New Repository</h2>
+
+      <div class="command-row">
+        <code id="cmd1"><span class="git">git</span> init</code>
+        <button class="copyBtn" data-target="cmd1">Copy</button>
+        <!-- <button class="btn-grad" data-target="cmd1">Copy</button> -->
+      </div>
+
+      <div class="command-row">
+        <code id="cmd2"><span class="git">git</span> add --all</code>
+        <button class="copyBtn" data-target="cmd2">Copy</button>
+      </div>
+
+      <div class="command-row">
+        <code id="cmd3"
+          ><span class="git">git</span> commit -m "Initial commit"</code
+        >
+        <button class="copyBtn" data-target="cmd3">Copy</button>
+      </div>
+
+      <div class="command-row">
+        <code id="cmd4"
+          ><span class="git">git</span> remote add origin
+          https://github.com/&lt;user&gt;/&lt;repo&gt;.git</code
+        >
+        <button class="copyBtn" data-target="cmd4">Copy</button>
+      </div>
+
+      <div class="command-row">
+        <code id="cmd5"
+          ><span class="git">git</span> push -u origin master</code
+        >
+        <button class="copyBtn" data-target="cmd5">Copy</button>
+      </div>
+
+      <h2>Working with Local Changes</h2>
+
+      <div class="command-row">
+        <code id="cmd6"><span class="git">git</span> status</code>
+        <button class="copyBtn" data-target="cmd6">Copy</button>
+      </div>
+
+      <div class="command-row">
+        <code id="cmd7"><span class="git">git</span> add -p &lt;file&gt;</code>
+        <button class="copyBtn" data-target="cmd7">Copy</button>
+      </div>
+
+      <div class="command-row">
+        <code id="cmd8"><span class="git">git</span> add --all</code>
+        <button class="copyBtn" data-target="cmd8">Copy</button>
+      </div>
+
+      <div class="command-row">
+        <code id="cmd9"
+          ><span class="git">git</span> commit -m "Your message here"</code
+        >
+        <button class="copyBtn" data-target="cmd9">Copy</button>
+      </div>
+
+      <h2>Viewing History</h2>
+
+      <div class="command-row">
+        <code id="cmd10"><span class="git">git</span> log</code>
+        <button class="copyBtn" data-target="cmd10">Copy</button>
+      </div>
+
+      <div class="command-row">
+        <code id="cmd11"><span class="git">git</span> log -p &lt;file&gt;</code>
+        <button class="copyBtn" data-target="cmd11">Copy</button>
+      </div>
+
+      <div class="command-row">
+        <code id="cmd12"><span class="git">git</span> blame &lt;file&gt;</code>
+        <button class="copyBtn" data-target="cmd12">Copy</button>
+      </div>
+
+      <h2>Branching and Merging</h2>
+
+      <div class="command-row">
+        <code id="cmd13"><span class="git">git</span> branch -av</code>
+        <button class="copyBtn" data-target="cmd13">Copy</button>
+      </div>
+
+      <div class="command-row">
+        <code id="cmd14"
+          ><span class="git">git</span> branch &lt;new-branch&gt;</code
+        >
+        <button class="copyBtn" data-target="cmd14">Copy</button>
+      </div>
+
+      <div class="command-row">
+        <code id="cmd15"
+          ><span class="git">git</span> checkout &lt;branch&gt;</code
+        >
+        <button class="copyBtn" data-target="cmd15">Copy</button>
+      </div>
+
+      <div class="command-row">
+        <code id="cmd16"
+          ><span class="git">git</span> merge &lt;branch&gt;</code
+        >
+        <button class="copyBtn" data-target="cmd16">Copy</button>
+      </div>
+
+      <h2>Undoing Changes</h2>
+
+      <div class="command-row">
+        <code id="cmd17"><span class="git">git</span> reset --hard HEAD</code>
+        <button class="copyBtn" data-target="cmd17">Copy</button>
+      </div>
+
+      <div class="command-row">
+        <code id="cmd18"
+          ><span class="git">git</span> checkout HEAD &lt;file&gt;</code
+        >
+        <button class="copyBtn" data-target="cmd18">Copy</button>
+      </div>
+
+      <div class="command-row">
+        <code id="cmd19"
+          ><span class="git">git</span> revert &lt;commitId&gt;</code
+        >
+        <button class="copyBtn" data-target="cmd19">Copy</button>
+      </div>
+
+      <h2>
+        <b>🛠️ Additional Commands</b>
+      </h2>
+
+      <h2>Cloning a Repository</h2>
+
+      <div class="command-row">
+        <code id="cmd20"
+          ><span class="git">git</span> clone
+          https://github.com/&lt;user&gt;/&lt;repo&gt;.git</code
+        >
+        <button class="copyBtn" data-target="cmd20">Copy</button>
+      </div>
+
+      <h2>Pulling Changes from Remote</h2>
+
+      <div class="command-row">
+        <code id="cmd21"><span class="git">git</span> pull origin master</code>
+        <button class="copyBtn" data-target="cmd21">Copy</button>
+      </div>
+
+      <h2>Pushing Changes to Remote</h2>
+
+      <div class="command-row">
+        <code id="cmd22"
+          ><span class="git">git</span> push origin &lt;branch&gt;</code
+        >
+        <button class="copyBtn" data-target="cmd22">Copy</button>
+      </div>
+
+      <h2>Stashing Changes</h2>
+
+      <div class="command-row">
+        <code id="cmd23"><span class="git">git</span> stash</code>
+        <button class="copyBtn" data-target="cmd23">Copy</button>
+      </div>
+
+      <div class="command-row">
+        <code id="cmd24"><span class="git">git</span> stash list</code>
+        <button class="copyBtn" data-target="cmd24">Copy</button>
+      </div>
+
+      <div class="command-row">
+        <code id="cmd25"><span class="git">git</span> stash apply</code>
+        <button class="copyBtn" data-target="cmd25">Copy</button>
+      </div>
+
+      <div class="command-row">
+        <code id="cmd26"><span class="git">git</span> stash drop</code>
+        <button class="copyBtn" data-target="cmd26">Copy</button>
+      </div>
+
+      <h2>Tagging</h2>
+
+      <div class="command-row">
+        <code id="cmd27"
+          ><span class="git">git</span> tag &lt;tag-name&gt;</code
+        >
+        <button class="copyBtn" data-target="cmd27">Copy</button>
+      </div>
+
+      <div class="command-row">
+        <code id="cmd28"><span class="git">git</span> tag</code>
+        <button class="copyBtn" data-target="cmd28">Copy</button>
+      </div>
+
+      <div class="command-row">
+        <code id="cmd29"
+          ><span class="git">git</span> push origin &lt;tag-name&gt;</code
+        >
+        <button class="copyBtn" data-target="cmd29">Copy</button>
+      </div>
+
+      <h2>Viewing Differences</h2>
+
+      <div class="command-row">
+        <code id="cmd30"><span class="git">git</span> diff</code>
+        <button class="copyBtn" data-target="cmd30">Copy</button>
+      </div>
+
+      <div class="command-row">
+        <code id="cmd31"><span class="git">git</span> diff HEAD</code>
+        <button class="copyBtn" data-target="cmd31">Copy</button>
+      </div>
+
+      <h2>Deleting Branches</h2>
+
+      <div class="command-row">
+        <code id="cmd32"
+          ><span class="git">git</span> branch -d &lt;branch&gt;</code
+        >
+        <button class="copyBtn" data-target="cmd32">Copy</button>
+      </div>
+
+      <div class="command-row">
+        <code id="cmd33"
+          ><span class="git">git</span> branch -D &lt;branch&gt;</code
+        >
+        <button class="copyBtn" data-target="cmd33">Copy</button>
+      </div>
+
+      <h2>Working with Remotes</h2>
+
+      <div class="command-row">
+        <code id="cmd34"><span class="git">git</span> remote -v</code>
+        <button class="copyBtn" data-target="cmd34">Copy</button>
+      </div>
+
+      <div class="command-row">
+        <code id="cmd35"
+          ><span class="git">git</span> remote add &lt;name&gt;
+          &lt;url&gt;</code
+        >
+        <button class="copyBtn" data-target="cmd35">Copy</button>
+      </div>
+
+      <div class="command-row">
+        <code id="cmd36"
+          ><span class="git">git</span> remote remove &lt;name&gt;</code
+        >
+        <button class="copyBtn" data-target="cmd36">Copy</button>
+      </div>
+      <footer style="text-align: center; margin-top: 20px">
+        Made with <span style="color: red">&#10084;</span> by Pantelis.
+      </footer>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
